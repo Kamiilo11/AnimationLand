@@ -1,0 +1,124 @@
+/*body {
+    counter-reset: game;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+.total-count::after {
+    content: counter(game);
+}
+*/
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+}
+
+.phone {
+    width: 330px;
+    max-width: 450px;
+    height: 740px;
+    max-height: 800px;
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    background-color: papayawhip;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 19px 38px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    right: 60px;
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    left: 60px;
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    height: 400px;
+    width: 200px;
+    background-color: blue;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 370px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    left: 20px;
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    height: 370px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    left: 20px;
+}
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 320px;
+    width: 200px;
+    background-color: lightblue;
+    left: 0;
+    bottom: 0;
+}
+
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    height: 300px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    right: 20px;
+}
+
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    height: 250px;
+    width: 180px;
+    background-color: lightcoral;
+    right: 0;
+    bottom: 0;
+}
+
+.layer-9 {
+    position: absolute;
+}
+
+.layer-10 {
+    position: absolute;
+}
