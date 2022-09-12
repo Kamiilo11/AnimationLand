@@ -266,3 +266,11 @@ body {
 
 /*animacion de un conejito*/
 
+/*comandos para abrir el repo en github y cambiar el nombre de la master branch
+git remote add origin <llave ssh de github>
+
+cuando se cree el repo cambiar nombre de la branch
+
+git branch -m main
+*/
+
