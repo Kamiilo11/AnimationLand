@@ -1,16 +1,3 @@
-/*body {
-    counter-reset: game;
-}
-
-input:checked {
-    counter-increment: game;
-}
-
-.total-count::after {
-    content: counter(game);
-}*/
-
-
 body {
     margin: 0;
     width: 100%;
@@ -64,6 +51,7 @@ p {
     background-color: papayawhip;
     margin-bottom: 10px;
     overflow: hidden;
+    align-self: center;
 }
 
 /*Maquetacion de las capas*/
@@ -141,116 +129,6 @@ p {
     border-radius: 20px;
 }
 
-.layer-3 .zig-zag1 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: green;
-    border-radius: 20px 0 20px 20px;    
-}
-
-.layer-3 .zig-zag2 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 10%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag3 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 20%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag4 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 30%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag5 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 40%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag6 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag7 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 60%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag8 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 70%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag9 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 80%;
-    background: green;
-    border-radius: 0 0 20px 20px; 
-}
-
-.layer-3 .zig-zag10 {
-    height: 28px;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 90%;
-    background: green;
-    border-radius: 0 20px 20px 20px;
-}
-
 .layer-4 {
     position: absolute;
     z-index: 4;
@@ -316,16 +194,68 @@ p {
 .layer-8 {
     position: absolute;
     z-index: 8;
-    height: 190px;
-    width: 100%;
-    background-color: hotpink;
-    right: 0;
+    height: 270px;
+    width: 80px;
+    background-color: red;
     bottom: 0;
+    left: 10px;
+}
+
+.layer-8 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .layer-9 {
     position: absolute;
     z-index: 9;
+    height: 200px;
+    width: 180px;
+    background-color: hotpink;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.layer-10 {
+    position: absolute;
+    z-index: 8;
+    height: 220px;
+    width: 80px;
+    background-color: red;
+    bottom: 0;
+    right: 10px;
+}
+
+.layer-10 input[type=checkbox] {
+    position: absolute;
+    appearance: none;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.layer-11 {
+    position: absolute;
+    z-index: 11;
+    height: 150px;
+    width: 50%;
+    background-color: orange;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px 20px 20px 0;
+}
+
+.layer-12 {
+    position: absolute;
+    z-index: 12;
     height: 150px;
     width: 40%;
     background-color: yellowgreen;
@@ -333,14 +263,116 @@ p {
     bottom: 0;
 }
 
-.layer-10 {
+/*Maquetacion del pasto*/
+
+.zig-zag1 {
+    height: 28px;
+    width: 10%;
     position: absolute;
-    z-index: 10;
-    height: 150px;
-    width: 40%;
-    background-color: yellowgreen;
-    right: 0;
-    bottom: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: green;
+    border-radius: 20px 0 20px 20px;    
+}
+
+.zig-zag2 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 10%;
+    background: yellowgreen;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag3 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 20%;
+    background: green;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag4 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 30%;
+    background: yellowgreen;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag5 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 40%;
+    background: green;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag6 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    background: yellowgreen;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag7 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 60%;
+    background: green;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag8 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 70%;
+    background: yellowgreen;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag9 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 80%;
+    background: green;
+    border-radius: 0 0 20px 20px; 
+}
+
+.zig-zag10 {
+    height: 28px;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 90%;
+    background: yellowgreen;
+    border-radius: 0 20px 20px 20px;
 }
 
 /*maquetacion de los conejos*/
@@ -429,7 +461,3 @@ p {
 .head__eye--right {
     right: 24px;
 }
-
-/*dibujos de muros*/
-
-/*dibujos de nubes*/
